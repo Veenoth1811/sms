@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.landing-page{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/lp.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+.upin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+    display: flex;
+    gap: 15px;
+}
+
+.upin button {
+    background-color: #ff7700;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.upin button:hover {
+    background-color: #e06600;
+}
+

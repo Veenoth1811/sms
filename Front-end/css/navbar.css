@@ -1,0 +1,93 @@
+
+.nav-bg {
+    background-color: #1b1d44;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav {
+    gap: 10px;
+}
+.navbar-toggler{
+    color:#1b1d44;
+    background-color: white;
+}
+
+.navbarText {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.navbar-brand {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+    font-family: "Fira Code";
+}
+
+.navbar-brand span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    font-family: "Fira Code";
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active,.navbar-brand:hover{
+    color: #ff7700 !important;
+}
+
+@media (max-width: 768px) {
+    
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-toggler{
+        color:#1b1d44;
+        background-color: white;
+    }
+
+    .navbarText {
+        display: block;
+        
+    }
+    
+}
+
+@media (max-width: 576px) {
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-toggler{
+        color:#1b1d44;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
+
+    .navbar-brand span {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+    .navbarText {
+        display: block;
+    }
+    
+}

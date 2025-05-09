@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <title>Register Form</title>
+</head>
+
+<body>
+
+    <div class="card-container">
+        <div class="card" id="flipCard">
+            
+            <div class="card-front">
+                <h1>Create Account</h1>
+                <form >
+                    <input type="text" placeholder="Enter your name" id="name" required>
+                    <p id="nw"></p>
+
+                    <input type="email" placeholder="Email" id="email" required>
+                    <p id="ew"></p>
+
+                    <input type="password" placeholder="Enter password" id="epwrd" required>
+                    <p id="epwrdw"></p>
+
+                    <input type="password" placeholder="Confirm Password" id="cpwrd" required>
+                    <p id="cpwrdw"></p>
+
+                    <button type="submit" id="register" class="SU">Sign Up</button>
+                </form>
+                <p class="log">Already have an account? <button onclick="flipCard()">Sign In</button></p>
+            </div>
+
+            
+            <div class="card-back" id="card-back">
+                <h1>Sign In</h1>
+                <form>
+                    <input type="email" placeholder="Enter your email" id="signin-email">
+                    <p id="ew"></p>
+                    <input type="password" id="psword" placeholder="Enter password">
+                    <p id="pwrd"></p>
+                    <button type="submit" class="SI">Sign In</button>
+                </form>
+                <p class="log">Don't have an account?<button onclick="flipCard()">Sign Up</button></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+        window.onload = function() {
+    if (window.location.hash === "#card-back") {
+        document.getElementById("flipCard").classList.add("flipped");
+    }
+    if (window.location.pathname === "/Front-end/html/signup.html") {
+        localStorage.removeItem("token");
+    }
+};
+    </script>
+    <script src="../js/app.js"></script>
+
+</body>
+
+</html>
