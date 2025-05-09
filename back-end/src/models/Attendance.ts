@@ -13,4 +13,4 @@ const attendanceSchema = new mongoose.Schema<IAttendance>({
 });
 
 const Attendance = mongoose.model<IAttendance>("Attendance", attendanceSchema);
-export default Attendance;
+export default Attendance;     //checking
